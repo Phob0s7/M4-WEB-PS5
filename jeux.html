@@ -1,92 +1,185 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="fr">
 
-<!-- Start Head -->
-
+<!-- head -->
 <head>
     <meta charset="utf-8">
-
-    <!-- CDN jquery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-
-    <!-- CDN Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Site PS5 | DIVTEC</title>
 
-    <!-- Link CSS -->
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- customize css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
-<!-- End head -->
 
-<!-- Start body -->
-
+<!-- body -->
 <body>
-    <!-- CDN jquery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-
-    <!-- CDN Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
-
     <!-- Navigation bar -->
     <nav class="navbar navbar-expand bg-primary">
         <a class="navbar-brand text-white" href="index.html">PS5-DIVTEC</a>
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link text-white" href="index.html">PS5</a>
+                <a class="nav-link text-white" href="index.html">Playstation 5</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link text-white" href="jeux.html">Jeux</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="#">Accessoires</a>
-            </li>
         </ul>
     </nav>
 
-    <div id="demo" class="carousel slide" data-ride="carousel">
+    <!-- header -->
+    <header class="main-header">
+        <h1>Jeux <span>Playstation 5</span></h1>
+        <p>Voici différents jeux qui sortiront au lancement et à une date ultérieure sur la console PS5.</p>
+    </header>
 
-        <!-- Indicators -->
-        <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-        </ul>
+    <!-- container -->
+    <main class="container">
+        <!-- Card 1 -->
+        <section class="card">
+            <img src="images/spiderman.jpg" alt="spiderman">
+            <div>
+                <h3>Marvel's Spider-Man: Miles Morales</h3>
+                <h5>
+                    <p>Disponible le 12 novembre 2020.</p>
+                </h5>
+                <p>Le récit est la continuité de Marvel's Spider-Man et de son contenu téléchargeable La ville qui ne
+                    dort jamais, où Miles Morales est mordu par une araignée génétiquement améliorée lui permettant
+                    d'obtenir des pouvoirs semblables à ceux de Peter Parker. Dans la bande-annonce, Miles possède son
+                    costume traditionnel Spider-Man noir et rouge et combat les criminels en tant que Spider-Man
+                    expérimenté, mettant en valeur son aiguillon venimeux et ses superpuissances d'invisibilité. Parker
+                    dit à Miles qu'il doit être comme son père et marcher sur la voie de devenir un héros pour la ville
+                    de New York.</p>
+            </div>
+        </section>
 
-        <!-- The slideshow -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="images/la.jpg" class="d-block" alt="Los Angeles">
+        <!-- Card 2 -->
+        <section class="card" data-aos="fade-left">
+            <img src="images/demons.jpg" alt="demons">
+            <div>
+                <h3>Demon's Souls</h3>
+                <h5>
+                    <p>Disponible le 12 novembre 2020.</p>
+                </h5>
+                <p>Demon's Souls est un remake sur PS5 du jeu de rôle éponyme sorti en 2009 sur PS3. Dans un univers
+                    apocalyptique, un brave tente de défier un à un les démons qui ravagent le monde. Mais sa quête
+                    suicidaire le conduit tout droit à la mort, et c'est sous forme de spectre qu'il doit poursuivre sa
+                    lutte contre le mal.</p>
             </div>
-            <div class="carousel-item">
-                <img src="images/Ratchet&Clank.jpg" class="d-block" alt="Chicago">
+        </section>
+
+        <!-- Card 3 -->
+        <section class="card" data-aos="fade-right">
+            <img src="images/astros.jpg" alt="astros">
+            <div>
+                <h3>Astro's Playroom</h3>
+                <h5>
+                    <p>Disponible le 12 novembre 2020.</p>
+                </h5>
+                <p>Le jeu est une démo technique démontrant les nouvelles capacités techniques de la manette DualSense
+                    de la PlayStation 5 de Sony. Il permet également aux joueurs de se familiariser avec ses nouvelles
+                    fonctionnalités.</p>
             </div>
-            <div class="carousel-item">
-                <img src="images/Spiderman.jpg" class="d-block" alt="New York">
+        </section>
+
+        <!-- Card 4 -->
+        <section class="card" data-aos="fade-left">
+            <img src="images/horizon.jpg" alt="horizon">
+            <div>
+                <h3>Horizon II: Forbidden West</h3>
+                <h5>
+                    <p>Disponible en 2021.</p>
+                </h5>
+                <p>Les joueurs contrôlent Aloy, une chasseuse dans un monde gouverné par des machines. Le jeu propose un
+                    monde ouvert dans une Californie post-apocalyptique. Les emplacements présentés dans la
+                    bande-annonce incluent un San Francisco en ruine et la vallée de Yosemite5. Ashly Burch et Lance
+                    Reddick reprennent leurs rôles respectifs d'Aloy et de Sylens6.</p>
             </div>
+        </section>
+
+        <!-- Card 5 -->
+        <section class="card" data-aos="fade-right">
+            <img src="images/ratchet&clank.jpg" alt="ratchet">
+            <div>
+                <h3>Ratchet and Clank: Rift Apart</h3>
+                <h5>
+                    <p>Date de sortie non communiqué.</p>
+                </h5>
+                <p>Le scénario du jeu démarre après l'histoire de Ratchet and Clank: Nexus et s'amorce lorsqu'un méchant
+                    arrive dans une ville alien et endommage le tissu de l’espace-temps, provoquant l’éruption de
+                    failles dimensionnelles dans l'univers tout entier1. Le gameplay s'attarde sur l'utilisation de
+                    failles pour voyager à travers l'espace et les dimensions.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 1000
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer class="page-footer bg-primary">
+
+        <!-- Container-->
+        <div class="container">
+
+            <!-- Grid row-->
+            <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+
+                <!-- Grid column 1 -->
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="index.html">Playstation 5</a>
+                    </h6>
+                </div>
+
+                <!-- Grid column 2 -->
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="index.html">Accueil</a>
+                    </h6>
+                </div>
+
+                <!-- Grid column 3 -->
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="jeux.html">Jeux</a>
+                    </h6>
+                </div>
+            </div>
+
+            <!-- Grid row-->
+            <hr class="rgba-white-light" style="margin: 0 15%;">
         </div>
 
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://www.divtec.ch/">Ecole Supérieure Technique | DIVTEC</a>
+        </div>
+        <!-- Copyright -->
 
-    </div>
-    <!-- Footer : copyright -->
-    <footer class="container">
-        &copy;2020
     </footer>
-    <!-- End body -->
+    <!-- Footer -->
+
+    <!-- body -->
 </body>
 
+<!-- html-->
 </html>
